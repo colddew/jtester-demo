@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite-testng">
+	<test name="suite-testng">
+		<groups>
+			<run>
+				<exclude name="g2" />
+				<exclude name="g3" />
+				<exclude name="oracle" />
+			</run>
+		</groups>
+		<packages>
+			<package name="cn.qfc.*" />
+		</packages>
+	</test>
+</suite>
