@@ -13,7 +13,6 @@ public class MySQLAndSQLServerTest extends JTester {
 		
 		db.table("user2").clean().insert(new DataMap() {
 			{
-				this.put("id", "888");
 				this.put("username", "jtester");
 				this.put("password", "jtester");
 				this.put("datee", "2011-11-11 11:11:11");
@@ -21,7 +20,7 @@ public class MySQLAndSQLServerTest extends JTester {
 			}
 		}).commit();
 		
-		db.table("user2").insert("{'id':'999','username':'jtester2','password':'jtester2','datee':'2013-11-05 11:11:11','bd':'8.88'}").commit();
+		db.table("user2").insert("{'username':'jtester2','password':'jtester2','datee':'2013-11-05 11:11:11','bd':'8.88'}").commit();
 		
 		db.table("user2").count().eq(2);
 		db.table("user2").query().propertyEqMap(2, new DataMap() {
@@ -33,5 +32,4 @@ public class MySQLAndSQLServerTest extends JTester {
 			}
 		});
 	}
-	
 }
