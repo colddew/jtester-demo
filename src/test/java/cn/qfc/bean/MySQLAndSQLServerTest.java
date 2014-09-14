@@ -11,7 +11,7 @@ public class MySQLAndSQLServerTest extends JTester {
 	@SuppressWarnings({ "serial", "unchecked" })
 	public void testDataMap() {
 		
-		db.table("user2").clean().insert(new DataMap() {
+		db.table("user2").clean().resetPrimaryKey().insert(new DataMap() {
 			{
 				this.put("username", "jtester");
 				this.put("password", "jtester");
