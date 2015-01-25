@@ -50,5 +50,4 @@ public class User {
 	public void setPhone(Phone phone) {
 		this.phone = phone;
 	}
-
 }

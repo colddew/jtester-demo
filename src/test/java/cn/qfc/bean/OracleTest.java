@@ -36,5 +36,4 @@ public class OracleTest extends JTester {
 		db.table("USER2").queryWhere("USERNAME='jtester'").propertyEq("PASSWORD", "jtester")
 			.propertyEq("DATEE", "2011-11-11").propertyEq("BD", new BigDecimal("99.99"));
 	}
-	
 }
