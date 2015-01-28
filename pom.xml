@@ -2,13 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>edu.ustc.sse.jtester</groupId>
 	<artifactId>jtester</artifactId>
-	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
-	
-	<name>jtester Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<name>jtester demo</name>
 	
 	<dependencies>
 		
