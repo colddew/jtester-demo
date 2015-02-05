@@ -14,7 +14,7 @@
 		<dependency>
 			<groupId>org.jtester</groupId>
 			<artifactId>jtester</artifactId>
-			<version>1.1.9</version>
+			<version>1.1.10</version>
 			<scope>test</scope>
 		</dependency>
 		
