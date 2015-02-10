@@ -89,7 +89,7 @@ public class MockTest extends JTester {
 		String service2 = testServiceImpl.service2();
 		
 		want.string(service).eq("true");
-		want.string(service2).eq("false");		
+		want.string(service2).eq("false");
 	}
 	
 	@Test
@@ -177,8 +177,7 @@ public class MockTest extends JTester {
 		want.bool(new TestServiceImpl().service4(testService2)).is(true);
 	}
 	
-	@Test(expectedExceptions = RuntimeException.class, 
-			expectedExceptionsMessageRegExp = "exception")
+	@Test(expectedExceptions = RuntimeException.class, expectedExceptionsMessageRegExp = "exception")
 	public void testException() {
 		
 		new Expectations() {
