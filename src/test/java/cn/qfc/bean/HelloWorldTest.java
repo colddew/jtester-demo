@@ -8,7 +8,7 @@ public class HelloWorldTest extends JTester {
 	
 	@Test
 	public void testHelloWorld() {
+		
 		Assert.assertEquals("hello world", "hello world");
-		System.out.println("hello world");
 	}
 }
